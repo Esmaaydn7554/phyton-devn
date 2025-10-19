@@ -1,0 +1,40 @@
+# odev.py
+# Python Dersi Ödevi - Esma Aydın
+
+# 1. Değişkenler
+isim = "Esma"
+yas = "19"
+print("Benim adım", isim, "ve yaşım", yas)
+
+# 2. Koşullar (if-else)
+if yas >= 18:
+    print("Reşitsiniz.")
+else:
+    print("Reşit değilsiniz.")
+
+# 3. Döngüler
+print("1'den 5'e kadar sayılar:")
+for i in range(1, 6):
+    print(i)
+
+# 4. Liste örneği
+meyveler = ["elma", "muz", "çilek"]
+print("Meyveler listesi:")
+for meyve in meyveler:
+    print(meyve)
+
+# 5. Fonksiyon
+def selamla(ad):
+    return f"Merhaba {ad}, nasılsın?"
+
+print(selamla(isim))
+
+# 6. String format (son konu)
+puan = 95.75
+print("Bugünkü sınavdan {:.2f} puan aldım.".format(puan))
+print(f"{isim} adlı öğrenci {puan:.1f} puan aldı.")
+
+# BONUS: Kullanıcıdan veri alma ve format kullanımı
+ad = input("Adınızı girin: ")
+yas = int(input("Yaşınızı girin: "))
+print(f"{ad} adlı kişi {yas} yaşındadır.")
